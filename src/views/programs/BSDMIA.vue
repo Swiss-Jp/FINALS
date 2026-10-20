@@ -1,5 +1,5 @@
 <script setup>
-import midasLogoImg from '@/assets/MIDAS.png'
+import midasLogoImg from '@/assets/midas.png'
 </script>
 
 <template>
