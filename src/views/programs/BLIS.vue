@@ -1,59 +1,56 @@
 <script setup>
-// Ensure your ITSO logo is placed in src/assets/ITSO.png
-import itsoLogoImg from '@/assets/IT.png'
+// Make sure your LISSO emblem is saved as src/assets/LISSO.png
+import lissoLogoImg from '@/assets/lis.png'
 </script>
 
 <template>
   <div class="program-page">
-    <!-- Centered Hero Section with Light Ray Effect -->
+    <!-- Hero Section with Left Content & Centered LISSO Badge -->
     <section class="hero-section">
-      <div class="hero-container">
-        <!-- Top Tagline Badge -->
-        <span class="program-pill">DEPARTMENT OF INFORMATION TECHNOLOGY</span>
+      <div class="hero-content">
+        <p class="hero-sub">the CCS core practices that build bridges between gaps</p>
+        
+        <h1 class="hero-main-title">
+          REMEMBER<br>
+          CONNECT<br>
+          ENGAGE<br>
+          BUILD<br>
+          SHARE
+        </h1>
+        
+        <p class="hero-description">
+          the <strong class="highlight">LIBRARY AND INFORMATION SCIENCE (BLIS)</strong> program provides knowledge and skills in managing information resources, digital archiving, database curation, and information technology applications[cite: 2].
+        </p>
+        
+        <p class="hero-tagline">DIFFERENT PEOPLE, ONE GOAL</p>
+      </div>
 
-        <!-- Center Logo & Title Grid -->
-        <div class="hero-center-block">
-          <div class="logo-wrapper">
-            <img :src="itsoLogoImg" alt="ITSO Logo" class="itso-main-logo" />
-          </div>
-
-          <h1 class="hero-main-title">
-            REMEMBER &bull; CONNECT &bull; ENGAGE &bull; BUILD &bull; SHARE
-          </h1>
-        </div>
-
-        <!-- Description Paragraph -->
-        <div class="hero-description-block">
-          <p class="hero-description">
-            The <strong class="highlight">INFORMATION TECHNOLOGY (BSIT)</strong> program focuses on the installation, customization, operation, management, and administration of computer systems and enterprise networks[cite: 2].
-          </p>
-          <div class="hero-tagline-bar">
-            <span>DIFFERENT PEOPLE, ONE GOAL</span>
-          </div>
+      <!-- Hero Card Area displaying LISSO Logo -->
+      <div class="hero-logo-area">
+        <div class="lisso-badge-card">
+          <img :src="lissoLogoImg" alt="LISSO Emblem" class="badge-image" />
         </div>
       </div>
     </section>
 
-    <!-- Side-by-Side Content Grid -->
+    <!-- Dark Emerald-Glow Content Section -->
     <div class="program-body">
-      <div class="content-grid">
-        <section class="content-card">
-          <h2>Program Objectives</h2>
-          <p>
-            Prepare students to become IT professionals capable of installing, customizing, operating, managing, and administering computer systems and enterprise networks effectively[cite: 2].
-          </p>
-        </section>
+      <section class="content-card">
+        <h2>Program Objectives</h2>
+        <p>
+          Prepare students to become information professionals, digital archivists, and knowledge managers capable of organizing, preserving, retrieving, and disseminating information effectively using modern library technologies and digital systems.
+        </p>
+      </section>
 
-        <section class="content-card">
-          <h2>Areas of Study & Course Highlights</h2>
-          <ul class="highlight-list">
-            <li>Web Systems and Technologies (Vue.js, Frontend & Backend architectures)[cite: 2]</li>
-            <li>Network Administration and Security[cite: 2]</li>
-            <li>System Integration and Database Management[cite: 2]</li>
-            <li>Enterprise Architecture and IT Project Management[cite: 2]</li>
-          </ul>
-        </section>
-      </div>
+      <section class="content-card">
+        <h2>Areas of Study & Course Highlights</h2>
+        <ul class="highlight-list">
+          <li>Information Organization, Indexing & Abstracting</li>
+          <li>Digital Libraries, Archiving & Preservation Systems</li>
+          <li>Database Management & Information Architecture</li>
+          <li>Library Automation, Analytics & Web Technologies</li>
+        </ul>
+      </section>
     </div>
   </div>
 </template>
@@ -61,142 +58,126 @@ import itsoLogoImg from '@/assets/IT.png'
 <style scoped>
 .program-page {
   width: 100%;
-  background-color: #050b0e;
+  background-color: #040f12;
   color: #e2e8f0;
   min-height: 100vh;
 }
 
-/* Hero Section with Warm Amber Radial Background Glow */
 .hero-section {
   position: relative;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  padding: 5rem 2rem;
-  background-color: #0b1a1d;
+  padding: 5rem 8%;
+  background-color: #081d22;
+  /* Dark teal gradient overlay with emerald highlights matching the LISSO logo */
   background-image: 
-    radial-gradient(circle at 50% 35%, rgba(245, 158, 11, 0.2) 0%, transparent 65%),
-    linear-gradient(to bottom, rgba(11, 26, 29, 0.95), rgba(5, 11, 14, 0.98));
-  min-height: 80vh;
-  border-bottom: 2px solid #f59e0b;
+    radial-gradient(circle at 75% 50%, rgba(16, 185, 129, 0.15) 0%, transparent 50%),
+    linear-gradient(to right, rgba(8, 29, 34, 0.95) 45%, rgba(8, 29, 34, 0.6) 100%);
+  background-size: cover;
+  background-position: center;
+  min-height: 85vh;
+  gap: 3rem;
+  border-bottom: 2px solid #10b981;
 }
 
-.hero-container {
-  max-width: 1000px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+.hero-content {
+  max-width: 580px;
   z-index: 2;
 }
 
-.program-pill {
-  background: rgba(245, 158, 11, 0.12);
-  color: #f59e0b;
-  border: 1px solid rgba(245, 158, 11, 0.35);
-  padding: 0.4rem 1.25rem;
-  border-radius: 30px;
-  font-size: 0.85rem;
-  font-weight: 700;
-  letter-spacing: 1.5px;
-  margin-bottom: 2rem;
-}
-
-.hero-center-block {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1.5rem;
-  margin-bottom: 2rem;
-}
-
-.logo-wrapper {
-  background: rgba(13, 35, 38, 0.75);
-  border: 2px solid #f59e0b;
-  border-radius: 20px;
-  padding: 1.5rem 2.5rem;
-  box-shadow: 0 0 35px rgba(245, 158, 11, 0.35);
-  backdrop-filter: blur(10px);
-}
-
-.itso-main-logo {
-  max-width: 280px;
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-  filter: drop-shadow(0 0 15px rgba(245, 158, 11, 0.5));
+.hero-sub {
+  color: #6ee7b7;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
 }
 
 .hero-main-title {
   color: #ffffff;
   font-family: 'Helvetica Neue', Arial, sans-serif;
-  font-size: 2rem;
+  font-size: 3.5rem;
   font-weight: 900;
-  letter-spacing: 2px;
-  line-height: 1.3;
-  margin: 0;
-}
-
-.hero-description-block {
-  max-width: 780px;
+  line-height: 1.05;
+  letter-spacing: 1px;
+  margin-bottom: 1.5rem;
 }
 
 .hero-description {
   color: #cbd5e1;
   font-family: 'Helvetica Neue', Arial, sans-serif;
-  font-size: 1.1rem;
-  line-height: 1.7;
+  font-size: 1.05rem;
+  line-height: 1.6;
   margin-bottom: 1.5rem;
 }
 
 .highlight {
-  color: #f59e0b;
+  color: #10b981; /* Emerald green accent matching the LISSO logo */
   font-weight: bold;
 }
 
-.hero-tagline-bar {
-  display: inline-block;
-  border-top: 1px solid rgba(245, 158, 11, 0.4);
-  border-bottom: 1px solid rgba(245, 158, 11, 0.4);
-  padding: 0.5rem 2rem;
-}
-
-.hero-tagline-bar span {
-  color: #f59e0b; 
+.hero-tagline {
+  color: #34d399; 
   font-family: 'Helvetica Neue', Arial, sans-serif;
-  font-size: 1rem;
-  font-weight: 800;
+  font-size: 1.1rem;
+  font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 0.5px;
+  margin: 0;
+}   
+
+/* Card Area with LISSO Emerald Glow */
+.hero-logo-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
 }
 
-/* Two-Column Side-by-Side Content Section */
+.lisso-badge-card {
+  background: rgba(8, 29, 34, 0.9);
+  padding: 2.5rem;
+  border-radius: 50%; /* Rounded circular card matching the LISSO emblem shape */
+  border: 3px solid #10b981;
+  box-shadow: 0 0 35px rgba(16, 185, 129, 0.35), inset 0 0 15px rgba(16, 185, 129, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(10px);
+  width: 380px;
+  height: 380px;
+}
+
+.badge-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 0 15px rgba(16, 185, 129, 0.4));
+}
+
 .program-body {
-  max-width: 1100px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 4rem 1.5rem;
-}
-
-.content-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
   gap: 2rem;
 }
 
 .content-card {
-  background: rgba(13, 35, 38, 0.7);
-  border: 1px solid rgba(245, 158, 11, 0.3);
-  border-top: 4px solid #f59e0b;
+  background: rgba(8, 29, 34, 0.85);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  border-bottom: 4px solid #10b981;
   padding: 2.25rem;
   border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 20px rgba(16, 185, 129, 0.15);
   backdrop-filter: blur(8px);
 }
 
 .content-card h2 {
-  color: #f59e0b;
-  font-size: 1.4rem;
+  color: #34d399;
+  font-size: 1.5rem;
   margin-top: 0;
   margin-bottom: 1rem;
 }
@@ -210,23 +191,22 @@ import itsoLogoImg from '@/assets/IT.png'
 
 .highlight-list {
   margin: 0;
-  padding-left: 1.25rem;
+  padding-left: 1.5rem;
   color: #cbd5e1;
-  line-height: 1.8;
+  line-height: 1.7;
   font-size: 1.05rem;
 }
 
-@media (max-width: 768px) {
-  .content-grid {
-    grid-template-columns: 1fr;
+@media (max-width: 900px) {
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 3rem 1.5rem;
   }
 
-  .hero-main-title {
-    font-size: 1.5rem;
-  }
-
-  .itso-main-logo {
-    max-width: 200px;
+  .lisso-badge-card {
+    width: 280px;
+    height: 280px;
   }
 }
 </style>

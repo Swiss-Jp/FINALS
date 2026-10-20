@@ -70,7 +70,7 @@ import csLogoImg from '@/assets/CS.png'
   align-items: center;
   padding: 6rem 8%;
   background-color: #0e1e2e;
-  background-image: linear-gradient(to right, rgba(14, 30, 46, 0.95) 50%, rgba(14, 30, 46, 0.5) 100%), url('@/assets/cs_background.png');
+  background-image: linear-gradient(to right, rgba(14, 30, 46, 0.95) 50%, rgba(14, 30, 46, 0.5) 100%), url('@/assets/CS.png');
   background-size: cover;
   background-position: center;
   min-height: 85vh;
