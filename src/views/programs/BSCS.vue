@@ -1,5 +1,4 @@
 <script setup>
-// 1. Import your CS side card image from the assets folder
 import csLogoImg from '@/assets/CS.png' 
 </script>
 
@@ -7,22 +6,17 @@ import csLogoImg from '@/assets/CS.png'
   <div class="program-page">
     <!-- Hero Section with Left Text and Centered CS Card -->
     <section class="hero-section">
-      <div class="hero-content">
-        <p class="hero-sub">the CCS core practices that build bridges between gaps</p>
-        
+      <div class="hero-content">        
         <h1 class="hero-main-title">
-          REMEMBER<br>
-          CONNECT<br>
-          ENGAGE<br>
-          BUILD<br>
-          SHARE
+          COMPUTER<br>
+          SCIENCE
         </h1>
         
         <p class="hero-description">
-          the <strong class="highlight">COMPUTER SCIENCE (CS)</strong> program focuses on the concepts and theories, algorithmic foundations, implementation, and application of computing solutions.
+          The <strong class="highlight">BACHELOR OF SCIENCE IN COMPUTER SCIENCE (CS)</strong> program is designed for students who want to study computing in depth.
         </p>
         
-        <p class="hero-tagline">DIFFERENT PEOPLE, ONE GOAL</p>
+        <p class="hero-tagline">COMPUTER SCIENCE SOCIETY</p>
       </div>
 
       <!-- Centered Hero Logo Card -->
@@ -33,24 +27,39 @@ import csLogoImg from '@/assets/CS.png'
       </div>
     </section>
 
-    <!-- Dark-Themed Content Cards Section -->
+    <!-- Side-by-Side Content Cards Section -->
     <div class="program-body">
-      <section class="content-card">
-        <h2>Program Objectives</h2>
-        <p>
-          Prepare students to become computer scientists and software engineers capable of designing, analyzing, and implementing complex software systems, algorithm architectures, and intelligent computing solutions.
-        </p>
-      </section>
+      <div class="cards-grid">
+        <section class="content-card">
+          <h2>PROGRAM EDUCATIONAL OBJECTIVES</h2>
+          <ul class="highlight-list">
+            <li>Exhibit skills, knowledge and leadership to excel in their computer science careers and related discipline.</li>
+            <li>Exhibit high standard of professionalism who are effective members of multi-discipline development teams.</li>
+            <li>Involved in scholarly activities, research and outreach that contributes to the improvement and transformation of society.</li>
+            <li>Demonstrate ethical, professional, spiritual values, and social responsibility associated with their Computer Science careers and related professions.</li>
+            <li>Exhibit proficiency in computing theory, algorithmic principles, and software design to implement advanced technological solutions.</li>
+          </ul>
+        </section>
 
-      <section class="content-card">
-        <h2>Areas of Study & Course Highlights</h2>
-        <ul class="highlight-list">
-          <li>Algorithms & Advanced Data Structures</li>
-          <li>Software Engineering & System Architecture</li>
-          <li>Artificial Intelligence & Machine Learning</li>
-          <li>Database Systems & Operating System Design</li>
-        </ul>
-      </section>
+        <section class="content-card">
+          <h2>CURRICULUM DESCRIPTION</h2>
+          <p class="card-intro">The BSCS curriculum includes foundation and professional courses that cover theory, algorithms, software design and development, and new developments in computing.</p>
+          <p class="card-intro-sub">Defines eleven (11) Knowledge Areas recommended in ACM Computer Science Curricula 2013:</p>
+          <ul class="highlight-list sub-list">
+            <li>Algorithms and Complexity</li>
+            <li>Architecture and Organization</li>
+            <li>Discrete Structures</li>
+            <li>Human Computer Interaction</li>
+            <li>Information Assurance and Security</li>
+            <li>Networks and Communications</li>
+            <li>Operating Systems</li>
+            <li>Programming Languages (Design and Implementation)</li>
+            <li>Software Development Fundamentals</li>
+            <li>Software Engineering</li>
+            <li>Social Issues and Professional Practice</li>
+          </ul>
+        </section>
+      </div>
     </div>
   </div>
 </template>
@@ -66,51 +75,45 @@ import csLogoImg from '@/assets/CS.png'
 .hero-section {
   position: relative;
   display: flex;
-  justify-content: space-around; /* Distributes items so the card sits perfectly balanced */
+  justify-content: space-between;
   align-items: center;
-  padding: 6rem 8%;
+  padding: 3.5rem 6%;
   background-color: #0e1e2e;
-  background-image: linear-gradient(to right, rgba(14, 30, 46, 0.95) 50%, rgba(14, 30, 46, 0.5) 100%), url('@/assets/CS.png');
+  background-image: 
+    radial-gradient(circle at 75% 50%, rgba(56, 189, 248, 0.15) 0%, transparent 50%),
+    linear-gradient(to right, rgba(14, 30, 46, 0.95) 45%, rgba(14, 30, 46, 0.6) 100%);
   background-size: cover;
   background-position: center;
-  min-height: 85vh;
-  gap: 2rem;
+  gap: 3rem;
+  border-bottom: 2px solid #38bdf8;
 }
 
 .hero-content {
-  max-width: 600px;
+  max-width: 620px;
   z-index: 2;
-}
-
-.hero-sub {
-  color: #7dd3fc;
-  font-family: 'Helvetica Neue', Arial, sans-serif;
-  font-size: 0.95rem;
-  font-weight: 500;
-  margin-bottom: 1rem;
 }
 
 .hero-main-title {
   color: #ffffff;
   font-family: 'Helvetica Neue', Arial, sans-serif;
-  font-size: 3.2rem;
-  font-weight: 800;
-  line-height: 1.1;
+  font-size: 4.2rem;
+  font-weight: 900;
+  line-height: 1.05;
   letter-spacing: 1px;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.2rem;
 }
 
 .hero-description {
   color: #cbd5e1;
   font-family: 'Helvetica Neue', Arial, sans-serif;
-  font-size: 1rem;
+  font-size: 1.1rem;
   line-height: 1.6;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .highlight {
   color: #38bdf8;
-  font-weight: inherit;
+  font-weight: bold;
 }
 
 .hero-tagline {
@@ -123,73 +126,114 @@ import csLogoImg from '@/assets/CS.png'
   margin: 0;
 }   
 
-/* Centered Hero Card Area */
+/* Centered Hero Card Area with Glow */
 .hero-logo-area {
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 2;
-  margin: 0 auto;
 }
 
 .cs-badge-card {
-  background: rgba(14, 30, 46, 0.85);
-  padding: 2rem;
-  border-radius: 12px;
+  background: rgba(14, 30, 46, 0.9);
+  padding: 2.5rem;
+  border-radius: 16px;
   border: 2px solid #38bdf8;
-  box-shadow: 0 8px 20px rgba(56, 189, 248, 0.2);
+  box-shadow: 0 0 40px rgba(56, 189, 248, 0.4), inset 0 0 15px rgba(56, 189, 248, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(10px);
+  width: 440px;
+  height: 440px;
 }
 
 .badge-image {
-  max-width: 220px; /* Slightly enlarged for better centered presence */
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: contain;
+  filter: drop-shadow(0 0 15px rgba(56, 189, 248, 0.4));
 }
 
 .program-body {
-  max-width: 1000px;
+  max-width: 1350px;
   margin: 0 auto;
-  padding: 4rem 1.5rem;
-  display: flex;
-  flex-direction: row;
+  padding: 3rem 1.5rem;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
 }
 
 .content-card {
   background: rgba(14, 30, 46, 0.85);
-  border: 1px solid rgba(56, 189, 248, 0.25);
+  border: 1px solid rgba(56, 189, 248, 0.3);
   border-bottom: 4px solid #38bdf8;
   padding: 2.25rem;
-  border-radius: 8px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(56, 189, 248, 0.15);
   backdrop-filter: blur(8px);
-  flex: 1;
 }
 
 .content-card h2 {
   color: #38bdf8;
-  font-size: 1.5rem;
+  font-size: 1.35rem;
   margin-top: 0;
   margin-bottom: 1rem;
 }
 
-.content-card p {
+.card-intro {
   color: #cbd5e1;
   line-height: 1.6;
-  font-size: 1.05rem;
-  margin: 0;
+  font-size: 0.98rem;
+  margin-bottom: 0.75rem;
+}
+
+.card-intro-sub {
+  color: #cbd5e1;
+  line-height: 1.6;
+  font-size: 0.98rem;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
 }
 
 .highlight-list {
   margin: 0;
-  padding-left: 1.5rem;
+  padding-left: 1.25rem;
   color: #cbd5e1;
-  line-height: 1.7;
-  font-size: 1.05rem;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.highlight-list li {
+  margin-bottom: 0.5rem;
+}
+
+.sub-list {
+  list-style-type: disc;
+}
+
+.sub-list li {
+  font-size: 0.92rem;
+  color: #94a3b8;
+}
+
+@media (max-width: 1024px) {
+  .cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 3rem 1.5rem;
+  }
+
+  .cs-badge-card {
+    width: 320px;
+    height: 320px;
+  }
 }
 </style>

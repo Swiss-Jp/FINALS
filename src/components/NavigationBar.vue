@@ -26,13 +26,13 @@ const currentLogo = computed(() => {
 // Scroll to section handler
 const navigateToSection = (sectionId) => {
   if (route.path === '/') {
-    // Already on Home: smooth scroll directly
+
     const element = document.getElementById(sectionId)
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' })
     }
   } else {
-    // On a program page: go to Home then scroll
+
     router.push({ path: '/', hash: `#${sectionId}` }).then(() => {
       setTimeout(() => {
         const element = document.getElementById(sectionId)
@@ -62,7 +62,7 @@ const scrollToTop = () => {
     
     <ul class="nav-links">
       <li><a href="#" @click.prevent="scrollToTop">Home</a></li>
-      <li><a href="#" @click.prevent="navigateToSection('about')">About</a></li>
+      
       
       <!-- Academic Programs Dropdown -->
       <li class="dropdown">
@@ -76,8 +76,10 @@ const scrollToTop = () => {
       </li>
 
       <li><a href="#" @click.prevent="navigateToSection('faculty')">Faculty & Staff</a></li>
+      <li><a href="#" @click.prevent="navigateToSection('about')">About</a></li>
       <li><a href="#" @click.prevent="navigateToSection('news')">News & Events</a></li>
       <li><a href="#" @click.prevent="navigateToSection('contact')">Contact Us</a></li>
+      
     </ul>
   </nav>
 </template>
@@ -104,7 +106,7 @@ const scrollToTop = () => {
 }
 
 .logo {
-  height: 42px;
+  height: 60px;
   width: auto;
   object-fit: contain;
   transition: all 0.3s ease;
@@ -113,21 +115,21 @@ const scrollToTop = () => {
 .brand-title {
   color: white;
   font-weight: 800;
-  font-size: 1.1rem;
+  font-size: 1.25rem;
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 1.5rem;
+  gap: 1.55rem;
   margin: 0;
   padding: 0;
   align-items: center;
 }
 
 .nav-links a {
-  color: white;
+  color: rgb(247, 247, 247);
   text-decoration: none;
   font-size: 0.95rem;
   font-weight: 500;
@@ -163,7 +165,7 @@ const scrollToTop = () => {
   background-color: #0b282e;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5);
   border: 1px solid rgba(245, 158, 11, 0.2);
-  border-radius: 6px;
+  border-radius: 5px;
   flex-direction: column;
   min-width: 140px;
   padding: 0.5rem 0;

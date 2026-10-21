@@ -44,19 +44,20 @@ const newsList = ref([
 <style scoped>
 .news-page {
   background: white;
-  padding: 2rem;
-  border-radius: 8px;
+  padding: 10rem;
   box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  
 }
 .news-header {
-  border-bottom: 2px solid #f0f0f0;
+  border-bottom: 2px solid #f59e0b;
   padding-bottom: 1.5rem;
   margin-bottom: 2rem;
+  text-align: center; /* Center aligns header text */
 }
+
 .news-header h1 {
   color: #003366;
-  margin-bottom: 0.5rem;
-}
+  margin-bottom: 0.5rem;}
 .news-header p {
   color: #555;
   font-size: 1.1rem;

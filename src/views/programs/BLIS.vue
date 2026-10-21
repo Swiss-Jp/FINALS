@@ -1,5 +1,5 @@
 <script setup>
-// Make sure your LISSO emblem is saved as src/assets/LISSO.png
+// Make sure your LISSO emblem is saved as src/assets/lis.png
 import lissoLogoImg from '@/assets/lis.png'
 </script>
 
@@ -8,21 +8,19 @@ import lissoLogoImg from '@/assets/lis.png'
     <!-- Hero Section with Left Content & Centered LISSO Badge -->
     <section class="hero-section">
       <div class="hero-content">
-        <p class="hero-sub">the CCS core practices that build bridges between gaps</p>
         
         <h1 class="hero-main-title">
-          REMEMBER<br>
-          CONNECT<br>
-          ENGAGE<br>
-          BUILD<br>
-          SHARE
+          LIBRARY<br>
+          INFORMATION<br>
+          SCIENCE<br>
+    
         </h1>
         
         <p class="hero-description">
-          the <strong class="highlight">LIBRARY AND INFORMATION SCIENCE (BLIS)</strong> program provides knowledge and skills in managing information resources, digital archiving, database curation, and information technology applications[cite: 2].
+          The Degree of<strong class="highlight">BACHELOR OF LIBRARY AND INFORMATION SCIENCE (BLIS)</strong> is a four year program that prepares students in development.
         </p>
         
-        <p class="hero-tagline">DIFFERENT PEOPLE, ONE GOAL</p>
+        <p class="hero-tagline">BLISS</p>
       </div>
 
       <!-- Hero Card Area displaying LISSO Logo -->
@@ -33,24 +31,26 @@ import lissoLogoImg from '@/assets/lis.png'
       </div>
     </section>
 
-    <!-- Dark Emerald-Glow Content Section -->
+    <!-- Dark Emerald-Glow Side-by-Side Content Section -->
     <div class="program-body">
-      <section class="content-card">
-        <h2>Program Objectives</h2>
-        <p>
-          Prepare students to become information professionals, digital archivists, and knowledge managers capable of organizing, preserving, retrieving, and disseminating information effectively using modern library technologies and digital systems.
-        </p>
-      </section>
+      <div class="cards-grid">
+        <section class="content-card">
+          <h2>Program Objectives</h2>
+          <p>
+            Prepare students to become information professionals, digital archivists, and knowledge managers capable of organizing, preserving, retrieving, and disseminating information effectively using modern library technologies and digital systems.
+          </p>
+        </section>
 
-      <section class="content-card">
-        <h2>Areas of Study & Course Highlights</h2>
-        <ul class="highlight-list">
-          <li>Information Organization, Indexing & Abstracting</li>
-          <li>Digital Libraries, Archiving & Preservation Systems</li>
-          <li>Database Management & Information Architecture</li>
-          <li>Library Automation, Analytics & Web Technologies</li>
-        </ul>
-      </section>
+        <section class="content-card">
+          <h2>Areas of Study & Course Highlights</h2>
+          <ul class="highlight-list">
+            <li>Information Organization, Indexing & Abstracting</li>
+            <li>Digital Libraries, Archiving & Preservation Systems</li>
+            <li>Database Management & Information Architecture</li>
+            <li>Library Automation, Analytics & Web Technologies</li>
+          </ul>
+        </section>
+      </div>
     </div>
   </div>
 </template>
@@ -68,21 +68,19 @@ import lissoLogoImg from '@/assets/lis.png'
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5rem 8%;
+  padding: 3.5rem 6%;
   background-color: #081d22;
-  /* Dark teal gradient overlay with emerald highlights matching the LISSO logo */
   background-image: 
-    radial-gradient(circle at 75% 50%, rgba(16, 185, 129, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 75% 50%, rgba(16, 185, 129, 0.18) 0%, transparent 50%),
     linear-gradient(to right, rgba(8, 29, 34, 0.95) 45%, rgba(8, 29, 34, 0.6) 100%);
   background-size: cover;
   background-position: center;
-  min-height: 85vh;
   gap: 3rem;
   border-bottom: 2px solid #10b981;
 }
 
 .hero-content {
-  max-width: 580px;
+  max-width: 620px;
   z-index: 2;
 }
 
@@ -97,23 +95,23 @@ import lissoLogoImg from '@/assets/lis.png'
 .hero-main-title {
   color: #ffffff;
   font-family: 'Helvetica Neue', Arial, sans-serif;
-  font-size: 3.5rem;
+  font-size: 3.8rem;
   font-weight: 900;
   line-height: 1.05;
   letter-spacing: 1px;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.2rem;
 }
 
 .hero-description {
   color: #cbd5e1;
   font-family: 'Helvetica Neue', Arial, sans-serif;
-  font-size: 1.05rem;
+  font-size: 1.1rem;
   line-height: 1.6;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .highlight {
-  color: #10b981; /* Emerald green accent matching the LISSO logo */
+  color: #10b981;
   font-weight: bold;
 }
 
@@ -138,15 +136,15 @@ import lissoLogoImg from '@/assets/lis.png'
 .lisso-badge-card {
   background: rgba(8, 29, 34, 0.9);
   padding: 2.5rem;
-  border-radius: 50%; /* Rounded circular card matching the LISSO emblem shape */
+  border-radius: 50%;
   border: 3px solid #10b981;
-  box-shadow: 0 0 35px rgba(16, 185, 129, 0.35), inset 0 0 15px rgba(16, 185, 129, 0.15);
+  box-shadow: 0 0 40px rgba(16, 185, 129, 0.4), inset 0 0 15px rgba(16, 185, 129, 0.15);
   display: flex;
   align-items: center;
   justify-content: center;
   backdrop-filter: blur(10px);
-  width: 380px;
-  height: 380px;
+  width: 440px;
+  height: 440px;
 }
 
 .badge-image {
@@ -157,11 +155,14 @@ import lissoLogoImg from '@/assets/lis.png'
 }
 
 .program-body {
-  max-width: 1000px;
+  max-width: 1350px;
   margin: 0 auto;
-  padding: 4rem 1.5rem;
-  display: flex;
-  flex-direction: column;
+  padding: 3rem 1.5rem;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
 }
 
@@ -177,7 +178,7 @@ import lissoLogoImg from '@/assets/lis.png'
 
 .content-card h2 {
   color: #34d399;
-  font-size: 1.5rem;
+  font-size: 1.35rem;
   margin-top: 0;
   margin-bottom: 1rem;
 }
@@ -185,19 +186,27 @@ import lissoLogoImg from '@/assets/lis.png'
 .content-card p {
   color: #cbd5e1;
   line-height: 1.6;
-  font-size: 1.05rem;
+  font-size: 0.98rem;
   margin: 0;
 }
 
 .highlight-list {
   margin: 0;
-  padding-left: 1.5rem;
+  padding-left: 1.25rem;
   color: #cbd5e1;
   line-height: 1.7;
-  font-size: 1.05rem;
+  font-size: 0.98rem;
 }
 
-@media (max-width: 900px) {
+.highlight-list li {
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 1024px) {
+  .cards-grid {
+    grid-template-columns: 1fr;
+  }
+
   .hero-section {
     flex-direction: column;
     text-align: center;
@@ -205,8 +214,8 @@ import lissoLogoImg from '@/assets/lis.png'
   }
 
   .lisso-badge-card {
-    width: 280px;
-    height: 280px;
+    width: 320px;
+    height: 320px;
   }
 }
 </style>

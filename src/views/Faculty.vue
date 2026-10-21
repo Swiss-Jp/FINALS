@@ -7,6 +7,7 @@ import beldiaImg from '@/assets/beldia.jpg'
 import cambroneroImg from '@/assets/cambronero.jpg'
 import ojacastroImg from '@/assets/ojacastro.jpg'
 import montanoImg from '@/assets/montano.jpg'
+import sapulImg from '@/assets/sapul.jpg'
 
 
 const dean = {
@@ -55,11 +56,11 @@ const facultyList = ref([
   },
   {
     id: 5,
-    name: 'John Doe',
+    name: 'SAPUL',
     designation: 'Faculty Member',
     program: 'BSCS',
     programsList: ['BSCS'],
-    image: '' 
+    image: sapulImg
   },
   {
     id: 6,
@@ -152,25 +153,9 @@ const filteredFaculty = computed(() => {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #ffffff;
+  background-color: #ececec;
   box-sizing: border-box;
   font-family: 'Helvetica Neue', Arial, sans-serif;
-}
-
-.header-container {
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-
-.header-container h2 {
-  font-family: 'Helvetica Neue', Arial, sans-serif;
-  font-size: 2.2rem;
-  font-weight: 800;
-  color: #f59e0b; 
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  margin: 0;
 }
 
 
@@ -207,7 +192,7 @@ const filteredFaculty = computed(() => {
 }
 
 .faculty-card {
-  background: #2a3b32; 
+  background: #0d2326; 
   display: flex;
   flex-direction: column;
   border-radius: 4px;

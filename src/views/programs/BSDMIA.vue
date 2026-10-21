@@ -4,59 +4,51 @@ import midasLogoImg from '@/assets/midas.png'
 
 <template>
   <div class="program-page">
-    <!-- Hero Section with Enlarged MIDAS Branding -->
+    <!-- Hero Section with Enlarged Card-Free MIDAS Logo -->
     <section class="hero-section">
-      <div class="hero-container">
-        <!-- Enlarged Logo Row - Now more prominent -->
-        <div class="hero-header-row logo-emphasis">
-          <div class="hero-logo-center">
-            <img :src="midasLogoImg" alt="MIDAS Logo" class="midas-logo-img" />
-          </div>
+      <div class="hero-content">        
+        <h1 class="hero-main-title">
+          DIGITAL<br>
+          MEDIA<br>
+          AND<br>
+          INTERACTIVE<br>
+          ARTS
+        </h1>
+        
+        <p class="hero-description">
+          The <strong class="highlight">BACHELOR OF SCIENCE IN DIGITAL MEDIA AND INTERACTIVE ARTS (BSDMIA)</strong> focuses on creative applied arts and digital media technologies.
+        </p>
+        
+        <p class="hero-tagline">MIDAS</p>
+      </div>
 
-          <h1 class="hero-main-title">
-            REMEMBER<br>
-            CONNECT<br>
-            ENGAGE<br>
-            BUILD<br>
-            SHARE
-          </h1>
-        </div>
-
-        <!-- Center Description Text -->
-        <div class="hero-description-block">
-          <p class="hero-description">
-            the <strong class="highlight">DIGITAL MEDIA AND INTERACTIVE ARTS (BSDMIA)</strong> program is designed to bridge the gap between computer science, multimedia arts, and intelligent systems[cite: 2, 7].
-          </p>
-          <p class="hero-tagline">DIFFERENT PEOPLE, ONE GOAL</p>
-        </div>
+      <!-- Card-Free Enlarged Logo Area -->
+      <div class="hero-logo-area">
+        <img :src="midasLogoImg" alt="MIDAS Logo" class="midas-logo-img" />
       </div>
     </section>
 
-    <!-- Dark Gold Card Section -->
+    <!-- Side-by-Side Content Cards Section -->
     <div class="program-body">
-      <section class="content-card">
-        <h2>Program Objectives</h2>
-        <p>
-          Prepare students to become multi-disciplinary professionals (computer scientists, multimedia artists, intelligent systems engineers) capable of designing, analyzing, and implementing intelligent, creative computing solutions and immersive interactive experiences across diverse platforms[cite: 7].
-        </p>
-      </section>
+      <div class="cards-grid">
+        <section class="content-card">
+          <h2>PROGRAM OBJECTIVES</h2>
+          <ul class="highlight-list">
+            <li>Exhibit skills, knowledge, and leadership to excel in their digital media and interactive arts careers and related disciplines.</li>
+            <li>Exhibit a high standard of professionalism as effective members of multi-disciplinary development teams.</li>
+            <li>Involve in scholarly activities, research, and outreach that contribute to the improvement and transformation of society.</li>
+            <li>Demonstrate ethical, professional, spiritual values, and social responsibility associated with their careers and related professions.</li>
+            <li>Exhibit proficiency in computing theory, applied arts, and interactive design to implement advanced technological solutions.</li>
+          </ul>
+        </section>
 
-      <section class="content-card">
-        <h2>Areas of Study & Course Highlights</h2>
-        <div class="highlight-grid">
-          <ul>
-            <li>Artificial Intelligence and Machine Learning[cite: 7]</li>
-            <li>Multimedia Design & Interactive Arts[cite: 7]</li>
-            <li>Algorithms and Advanced Computing[cite: 7]</li>
-            <li>Human-Computer Interaction & UX Design[cite: 7]</li>
-          </ul>
-          <ul>
-            <li>System Architecture and Software Engineering[cite: 7]</li>
-            <li>Data Science and Pattern Recognition[cite: 7]</li>
-            <li>Game Development & Creative Technologies[cite: 7]</li>
-          </ul>
-        </div>
-      </section>
+        <section class="content-card">
+          <h2>CURRICULUM DESCRIPTION</h2>
+          <p class="curriculum-text">
+            The Degree of Bachelor of Science in Digital Media and Interactive Arts is focused on creativity, applied arts, and digital media technologies. It is designed to develop creative talents for a variety of applied arts industries, including but not limited to entertainment, education, advertising and commercials, films, and corporate communications sectors.
+          </p>
+        </section>
+      </div>
     </div>
   </div>
 </template>
@@ -72,78 +64,38 @@ import midasLogoImg from '@/assets/midas.png'
 .hero-section {
   position: relative;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  padding: 5rem 2rem;
+  padding: 3.5rem 6%;
   background-color: #0a181c;
-  
-  /* Retaining the Rich Golden Background Light Rays Overlay */
   background-image: 
-    radial-gradient(circle at 50% 30%, rgba(245, 158, 11, 0.18) 0%, transparent 60%),
-    linear-gradient(135deg, rgba(245, 158, 11, 0.22) 0%, transparent 40%),
-    linear-gradient(225deg, rgba(245, 158, 11, 0.22) 0%, transparent 40%);
-  
-  min-height: 85vh; /* Increased slightly for bigger logo presence */
+    radial-gradient(circle at 75% 50%, rgba(245, 158, 11, 0.18) 0%, transparent 50%),
+    linear-gradient(to right, rgba(10, 24, 28, 0.95) 45%, rgba(10, 24, 28, 0.6) 100%);
+  background-size: cover;
+  background-position: center;
+  gap: 3rem;
   border-bottom: 2px solid #f59e0b;
 }
 
-.hero-container {
-  max-width: 1100px; /* Increased max-width to accommodate larger elements */
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+.hero-content {
+  max-width: 620px;
   z-index: 2;
-}
-
-.hero-header-row {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 4rem; /* Increased gap */
-  margin-bottom: 3.5rem; /* Increased margin */
-  width: 100%;
-}
-
-/* Specific class to handle logo emphasis layout */
-.logo-emphasis {
-  flex-direction: row-reverse; /* Flip logo/text order for centered emphasis */
 }
 
 .hero-main-title {
   color: #ffffff;
   font-family: 'Helvetica Neue', Arial, sans-serif;
-  font-size: 3rem; /* Increased font size */
+  font-size: 3.2rem;
   font-weight: 900;
   line-height: 1.1;
-  letter-spacing: 2px;
-  text-align: left;
-}
-
-.hero-logo-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* CHANGED: Significantly increased max-width for the logo */
-.midas-logo-img {
-  max-width: 480px; /* Was 260px - significantly increased for impact */
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-  filter: drop-shadow(0 0 35px rgba(245, 158, 11, 0.7)); /* Enhanced glow for size */
-}
-
-.hero-description-block {
-  max-width: 850px; /* Increased max-width to match new layout scale */
+  letter-spacing: 1.5px;
+  margin-bottom: 1.2rem;
 }
 
 .hero-description {
-  color: #e2e8f0;
+  color: #cbd5e1;
   font-family: 'Helvetica Neue', Arial, sans-serif;
-  font-size: 1.15rem; /* Slightly increased font size */
+  font-size: 1.1rem;
   line-height: 1.6;
   margin-bottom: 1rem;
 }
@@ -156,83 +108,91 @@ import midasLogoImg from '@/assets/midas.png'
 .hero-tagline {
   color: #f59e0b; 
   font-family: 'Helvetica Neue', Arial, sans-serif;
-  font-size: 1.2rem; /* Slightly increased font size */
+  font-size: 1.1rem;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 1.5px;
   margin: 0;
+}   
+
+/* Card-free Enlarged Logo Area with Enhanced Glow */
+.hero-logo-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  flex: 1;
+}
+
+.midas-logo-img {
+  max-width: 480px;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 0 35px rgba(245, 158, 11, 0.6));
 }
 
 .program-body {
-  max-width: 950px;
+  max-width: 1350px;
   margin: 0 auto;
-  padding: 4rem 1.5rem;
-  display: flex;
-  flex-direction: column;
+  padding: 3rem 1.5rem;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
 }
 
 .content-card {
   background: rgba(10, 24, 28, 0.85);
-  border: 2px solid #f59e0b;
+  border: 1px solid rgba(245, 158, 11, 0.3);
+  border-bottom: 4px solid #f59e0b;
+  padding: 2.25rem;
   border-radius: 12px;
-  padding: 2rem 2.5rem;
-  box-shadow: 0 0 25px rgba(245, 158, 11, 0.25);
+  box-shadow: 0 0 20px rgba(245, 158, 11, 0.15);
   backdrop-filter: blur(8px);
 }
 
 .content-card h2 {
   color: #fbbf24;
-  font-size: 1.4rem;
+  font-size: 1.35rem;
   margin-top: 0;
   margin-bottom: 1rem;
 }
 
-.content-card p {
+.curriculum-text {
   color: #cbd5e1;
-  line-height: 1.6;
-  font-size: 1.05rem;
+  line-height: 1.7;
+  font-size: 1rem;
   margin: 0;
 }
 
-.highlight-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1.5rem;
-}
-
-.highlight-grid ul {
+.highlight-list {
   margin: 0;
   padding-left: 1.25rem;
   color: #cbd5e1;
-  line-height: 1.8;
-  font-size: 1rem;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.highlight-list li {
+  margin-bottom: 0.75rem;
 }
 
 @media (max-width: 1024px) {
-  .midas-logo-img {
-    max-width: 380px; /* Responsive adjustment for medium screens */
-  }
-}
-
-@media (max-width: 768px) {
-  .hero-header-row {
-    flex-direction: column-reverse; /* Standard vertical stack on mobile */
-    text-align: center;
-    gap: 2rem;
-  }
-  
-  .hero-main-title {
-    text-align: center;
-    font-size: 2.5rem;
-  }
-  
-  .midas-logo-img {
-    max-width: 300px; /* Standard mobile size */
-  }
-  
-  .highlight-grid {
+  .cards-grid {
     grid-template-columns: 1fr;
+  }
+
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 3rem 1.5rem;
+  }
+
+  .midas-logo-img {
+    max-width: 360px;
   }
 }
 </style>

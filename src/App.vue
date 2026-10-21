@@ -13,6 +13,7 @@ import NavigationBar from './components/NavigationBar.vue'
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #ffffff;
+  background-color: #0d2326;
 }
+
 </style>

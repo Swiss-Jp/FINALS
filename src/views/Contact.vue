@@ -11,10 +11,6 @@
         <p><strong>Address:</strong> Henry Luce III Library Building / CCS Department, Central Philippine University, Jaro, Iloilo City, Philippines</p>
         <p><strong>Email:</strong> ccs@cpu.edu.ph</p>
         <p><strong>Phone:</strong> (033) 329-1971</p>
-
-        <div class="demo-badge">
-          <span>⚠️ Note: Contact form submission is for demonstration purposes only[cite: 2].</span>
-        </div>
       </div>
 
       <form class="contact-form" @submit.prevent="handleSubmit">
@@ -67,47 +63,42 @@ const handleSubmit = () => {
 
 <style scoped>
 .contact-page {
-  background: white;
-  padding: 2rem;
-  border-radius: 8px;
+  background: #0d2326;
+  padding: 10rem;
   box-shadow: 0 4px 6px rgba(0,0,0,0.05);
 }
+
 .contact-header {
-  border-bottom: 2px solid #f0f0f0;
+  border-bottom: 2px solid #f59e0b;
   padding-bottom: 1.5rem;
   margin-bottom: 2rem;
+  text-align: center; /* Center aligns header text */
 }
 .contact-header h1 {
-  color: #003366;
+  color: #f59e0b;
   margin-bottom: 0.5rem;
 }
 .contact-header p {
-  color: #555;
+  color: #f8f8f7;
   font-size: 1.1rem;
 }
 .contact-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
+  color: #c2c218;
 }
 .contact-info h2, .contact-form h2 {
-  color: #003366;
+  color: #fd9a05;
   font-size: 1.3rem;
   margin-bottom: 1rem;
 }
 .contact-info p {
-  color: #444;
+  color: #fdfdfd;
   line-height: 1.5;
   margin-bottom: 0.8rem;
 }
-.demo-badge {
-  background: #fff8e1;
-  border-left: 4px solid #ffcc00;
-  padding: 0.75rem;
-  margin-top: 1.5rem;
-  font-size: 0.85rem;
-  color: #795548;
-}
+
 .contact-form {
   background: #f9f9f9;
   padding: 1.5rem;
@@ -121,13 +112,13 @@ const handleSubmit = () => {
   display: block;
   font-size: 0.85rem;
   font-weight: bold;
-  color: #333;
+  color: #000000;
   margin-bottom: 0.3rem;
 }
 .form-group input, .form-group textarea {
   width: 100%;
   padding: 0.6rem;
-  border: 1px solid #ccc;
+  border: 1px solid #000000;
   border-radius: 4px;
   box-sizing: border-box;
   font-family: inherit;
@@ -144,11 +135,5 @@ const handleSubmit = () => {
 }
 .submit-btn:hover {
   background: #002244;
-}
-.feedback-msg {
-  margin-top: 1rem;
-  font-size: 0.9rem;
-  color: #2e7d32;
-  font-weight: bold;
 }
 </style>

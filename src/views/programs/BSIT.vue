@@ -1,5 +1,5 @@
 <script setup>
-// Make sure your ITSO emblem is saved as src/assets/ITSO.png
+// Make sure your ITSO emblem is saved as src/assets/IT.png
 import itsoLogoImg from '@/assets/IT.png'
 </script>
 
@@ -7,22 +7,15 @@ import itsoLogoImg from '@/assets/IT.png'
   <div class="program-page">
     <!-- Hero Section with Left Content & Centered ITSO Badge -->
     <section class="hero-section">
-      <div class="hero-content">
-        <p class="hero-sub">the CCS core practices that build bridges between gaps</p>
-        
+      <div class="hero-content">        
         <h1 class="hero-main-title">
-          REMEMBER<br>
-          CONNECT<br>
-          ENGAGE<br>
-          BUILD<br>
-          SHARE
+          Information<br>
+          Technology
         </h1>
-        
+
         <p class="hero-description">
-          the <strong class="highlight">INFORMATION TECHNOLOGY (BSIT)</strong> program focuses on the installation, customization, operation, management, and administration of computer systems and enterprise networks[cite: 2].
+          The <strong class="highlight">BACHELOR OF SCIENCE IN INFORMATION TECHNOLOGY (BSIT)</strong> program is designed to bridge the gap between computer science and management information systems.
         </p>
-        
-        <p class="hero-tagline">DIFFERENT PEOPLE, ONE GOAL</p>
       </div>
 
       <!-- Hero Card Area displaying ITSO Logo -->
@@ -33,24 +26,44 @@ import itsoLogoImg from '@/assets/IT.png'
       </div>
     </section>
 
-    <!-- Dark Gold-Glow Content Section -->
+    <!-- Dark Gold-Glow Content Section (Side-by-Side Grid) -->
     <div class="program-body">
-      <section class="content-card">
-        <h2>Program Objectives</h2>
-        <p>
-          Prepare students to become IT professionals capable of installing, customizing, operating, managing, and administering computer systems and enterprise networks effectively[cite: 2].
-        </p>
-      </section>
+      <div class="cards-grid">
+        <section class="content-card">
+          <h2>PROGRAM EDUCATIONAL OBJECTIVES</h2>
+          <ul class="highlight-list">
+            <li>Exhibit skills, knowledge and leadership to excel in their information technology careers and related discipline.</li>
+            <li>Exhibit high standard of professionalism who are effective members of multi-discipline development teams</li>
+            <li>Involved in scholarly activities, research and outreach that contributes to the improvement and transformation of society</li>
+            <li>Demonstrate ethical, professional, spiritual values, and social responsibility associated with their Information Technology careers and related professions.</li>
+            <li>Exhibit proficiency in the use of traditional and digital media arts, designing, developing and implementing digital media solutions in fields of entertainment and corporate environments.</li>
+          </ul>
+        </section>
 
-      <section class="content-card">
-        <h2>Areas of Study & Course Highlights</h2>
-        <ul class="highlight-list">
-          <li>Web Systems and Technologies (Vue.js, Frontend & Backend architectures)</li>
-          <li>Network Administration and Security</li>
-          <li>System Integration and Database Management</li>
-          <li>Enterprise Architecture and IT Project Management</li>
-        </ul>
-      </section>
+<section class="content-card">
+          <h2>CURRICULUM DESCRIPTION</h2>
+          <ul class="highlight-list">
+            <li>The BSIT curriculum includes basic and advanced courses on planning, development, integration, and management of information technology infrastructure that provide computing solutions to address the needs of organizations.</li>
+            <li>The curriculum should include courses that cover Knowledge Areas as recommended in ACM Information Technology Curricula 2008.</li>
+            <li>
+              Defines eleven (11) Knowledge Areas:
+              <ul class="sub-list">
+                <li>Information Technology Fundamentals</li>
+                <li>Human Computer Interaction</li>
+                <li>Information Assurance and Security</li>
+                <li>Information Management</li>
+                <li>Integrative Programming and Technologies</li>
+                <li>Networking</li>
+                <li>Platform Technologies</li>
+                <li>Systems Administration and Maintenance</li>
+                <li>Systems Integration and Architecture</li>
+                <li>Social and Professional Issues</li>
+                <li>Web Systems and Technologies</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+      </div>
     </div>
   </div>
 </template>
@@ -68,64 +81,44 @@ import itsoLogoImg from '@/assets/IT.png'
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5rem 8%;
+  padding: 3.5rem 6%; /* Tightened vertical padding */
   background-color: #0d2326;
-  /* Dark teal gradient overlay with gold/amber highlights matching the ITSO logo */
   background-image: 
     radial-gradient(circle at 75% 50%, rgba(245, 158, 11, 0.15) 0%, transparent 50%),
     linear-gradient(to right, rgba(13, 35, 38, 0.95) 45%, rgba(13, 35, 38, 0.6) 100%);
   background-size: cover;
   background-position: center;
-  min-height: 85vh;
   gap: 3rem;
   border-bottom: 2px solid #f59e0b;
 }
 
 .hero-content {
-  max-width: 580px;
+  max-width: 620px;
   z-index: 2;
-}
-
-.hero-sub {
-  color: #94a3b8;
-  font-family: 'Helvetica Neue', Arial, sans-serif;
-  font-size: 0.95rem;
-  font-weight: 500;
-  margin-bottom: 1rem;
 }
 
 .hero-main-title {
   color: #ffffff;
   font-family: 'Helvetica Neue', Arial, sans-serif;
-  font-size: 3.5rem;
+  font-size: 4.2rem; /* Made larger */
   font-weight: 900;
   line-height: 1.05;
   letter-spacing: 1px;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.2rem;
 }
 
 .hero-description {
   color: #cbd5e1;
   font-family: 'Helvetica Neue', Arial, sans-serif;
-  font-size: 1.05rem;
+  font-size: 1.1rem;
   line-height: 1.6;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0;
 }
 
 .highlight {
-  color: #f59e0b; /* Signature accent gold */
+  color: #f59e0b;
   font-weight: bold;
 }
-
-.hero-tagline {
-  color: #f59e0b; 
-  font-family: 'Helvetica Neue', Arial, sans-serif;
-  font-size: 1.1rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  margin: 0;
-}   
 
 /* Card Area with ITSO Gold Glow */
 .hero-logo-area {
@@ -140,13 +133,13 @@ import itsoLogoImg from '@/assets/IT.png'
   padding: 2.5rem;
   border-radius: 16px;
   border: 2px solid #f59e0b;
-  box-shadow: 0 0 35px rgba(245, 158, 11, 0.35), inset 0 0 15px rgba(245, 158, 11, 0.1);
+  box-shadow: 0 0 40px rgba(245, 158, 11, 0.4), inset 0 0 15px rgba(245, 158, 11, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
   backdrop-filter: blur(10px);
-  width: 380px;
-  height: 380px;
+  width: 440px; /* Made larger */
+  height: 440px; /* Made larger */
 }
 
 .badge-image {
@@ -157,11 +150,15 @@ import itsoLogoImg from '@/assets/IT.png'
 }
 
 .program-body {
-  max-width: 1000px;
+  max-width: 1350px; /* Expanded max-width for side-by-side layout */
   margin: 0 auto;
-  padding: 4rem 1.5rem;
-  display: flex;
-  flex-direction: column;
+  padding: 3rem 1.5rem;
+}
+
+/* Side-by-side grid layout for cards */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
 }
 
@@ -177,27 +174,24 @@ import itsoLogoImg from '@/assets/IT.png'
 
 .content-card h2 {
   color: #f59e0b;
-  font-size: 1.5rem;
+  font-size: 1.35rem;
   margin-top: 0;
   margin-bottom: 1rem;
 }
 
-.content-card p {
-  color: #cbd5e1;
-  line-height: 1.6;
-  font-size: 1.05rem;
-  margin: 0;
-}
-
 .highlight-list {
   margin: 0;
-  padding-left: 1.5rem;
+  padding-left: 1.25rem;
   color: #cbd5e1;
   line-height: 1.7;
-  font-size: 1.05rem;
+  font-size: 0.98rem;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
+  .cards-grid {
+    grid-template-columns: 1fr; /* Stack on smaller screens */
+  }
+
   .hero-section {
     flex-direction: column;
     text-align: center;
@@ -205,8 +199,8 @@ import itsoLogoImg from '@/assets/IT.png'
   }
 
   .itso-badge-card {
-    width: 280px;
-    height: 280px;
+    width: 320px;
+    height: 320px;
   }
 }
 </style>

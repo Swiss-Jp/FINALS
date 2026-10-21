@@ -11,9 +11,9 @@ import About from '@/views/About.vue';
   <div class="home-container">
     <div id="home"><Hero /></div>
     <div id="faculty"><Faculty /></div>
+    <div id="about"><About /></div>
     <div id="news"><News /></div>
     <div id="contact"><Contact /></div>
-    <div id="about"><About /></div>
   </div>
 </template>
 
