@@ -1,5 +1,5 @@
 <script setup>
-import midasLogoImg from '@/assets/midas.png'
+import midasLogoImg from '@/assets/midasBig.png'
 </script>
 
 <template>
@@ -34,18 +34,22 @@ import midasLogoImg from '@/assets/midas.png'
         <section class="content-card">
           <h2>PROGRAM OBJECTIVES</h2>
           <ul class="highlight-list">
-            <li>Exhibit skills, knowledge, and leadership to excel in their digital media and interactive arts careers and related disciplines.</li>
-            <li>Exhibit a high standard of professionalism as effective members of multi-disciplinary development teams.</li>
-            <li>Involve in scholarly activities, research, and outreach that contribute to the improvement and transformation of society.</li>
-            <li>Demonstrate ethical, professional, spiritual values, and social responsibility associated with their careers and related professions.</li>
-            <li>Exhibit proficiency in computing theory, applied arts, and interactive design to implement advanced technological solutions.</li>
+            <li>Exhibit skills, knowledge and leadership to excel in their information technology careers and related discipline.</li>
+            <li>Exhibit high standard of professionalism who are effective members of multi-discipline development teams.</li>
+            <li> Involved in scholarly activities, research and outreach that contributes to the improvement and transformation of society.</li>
+            <li>Demonstrate ethical, professional, spiritual values, and social responsibility associated with their Information Technology careers and related professions.</li>
+            <li>Exhibit proficiency in the use of traditional and digital media arts, designing, developing and implementing digital media solutions in fields of entertainment and corporate environments.</li>
           </ul>
-        </section>
+        </section>                                                                  
 
         <section class="content-card">
           <h2>CURRICULUM DESCRIPTION</h2>
           <p class="curriculum-text">
-            The Degree of Bachelor of Science in Digital Media and Interactive Arts is focused on creativity, applied arts, and digital media technologies. It is designed to develop creative talents for a variety of applied arts industries, including but not limited to entertainment, education, advertising and commercials, films, and corporate communications sectors.
+            The Degree of Bachelor of Science in Digital Media and Interactive Arts is focused on creativity, applied arts and digital media technologies. 
+            It is designed to developing creative talents for a variety of applied arts industries,
+            including but not limited to the entertainment, education, advertising and commercials, films and corporate communications sectors.
+            The structure of the course enable students from different disciplines to collaborate and work together to produce the best artworks acceptable to the 
+            industry standards. Students will undergo training and education to enhance their skills with the talent-centric curriculum for the high-end digital media industry.
           </p>
         </section>
       </div>

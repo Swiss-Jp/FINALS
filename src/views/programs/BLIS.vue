@@ -1,11 +1,9 @@
 <script setup>
-// Make sure your LISSO emblem is saved as src/assets/lis.png
-import lissoLogoImg from '@/assets/lis.png'
+import lissoLogoImg from '@/assets/LISSO.png'
 </script>
 
 <template>
   <div class="program-page">
-    <!-- Hero Section with Left Content & Centered LISSO Badge -->
     <section class="hero-section">
       <div class="hero-content">
         
@@ -23,7 +21,6 @@ import lissoLogoImg from '@/assets/lis.png'
         <p class="hero-tagline">BLISS</p>
       </div>
 
-      <!-- Hero Card Area displaying LISSO Logo -->
       <div class="hero-logo-area">
         <div class="lisso-badge-card">
           <img :src="lissoLogoImg" alt="LISSO Emblem" class="badge-image" />
@@ -36,19 +33,21 @@ import lissoLogoImg from '@/assets/lis.png'
       <div class="cards-grid">
         <section class="content-card">
           <h2>Program Objectives</h2>
-          <p>
-            Prepare students to become information professionals, digital archivists, and knowledge managers capable of organizing, preserving, retrieving, and disseminating information effectively using modern library technologies and digital systems.
-          </p>
+          <ul class="highlight-list">
+            <li>Exhibit skills, knowledge and leadership to excel in their information technology careers and related discipline.</li>
+            <li>Exhibit high standard of professionalism who are effective members of multi-discipline development teams</li>
+            <li>Involved in scholarly activities, research and outreach that contributes to the improvement and transformation of society</li>
+            <li>Demonstrate ethical, professional, spiritual values, and social responsibility associated with their Information Technology careers and related professions.</li>
+            <li>Exhibit proficiency in the use of traditional and digital media arts, designing, developing and implementing digital media solutions in fields of entertainment and corporate environments.</li>
+          </ul>  
         </section>
 
         <section class="content-card">
-          <h2>Areas of Study & Course Highlights</h2>
-          <ul class="highlight-list">
-            <li>Information Organization, Indexing & Abstracting</li>
-            <li>Digital Libraries, Archiving & Preservation Systems</li>
-            <li>Database Management & Information Architecture</li>
-            <li>Library Automation, Analytics & Web Technologies</li>
-          </ul>
+          <h2>CURRICULUM DESCRIPTION</h2>
+            <P>
+              The LIS curriculum is designed to equip the professional with the composite knowledge, skills, attitudes, and 
+              tools to enable him/her to be responsive to the changing information needs of society.
+            </P>
         </section>
       </div>
     </div>
@@ -137,19 +136,18 @@ import lissoLogoImg from '@/assets/lis.png'
   background: rgba(8, 29, 34, 0.9);
   padding: 2.5rem;
   border-radius: 50%;
-  border: 3px solid #10b981;
-  box-shadow: 0 0 40px rgba(16, 185, 129, 0.4), inset 0 0 15px rgba(16, 185, 129, 0.15);
+  box-shadow: 0 0 40px rgba(16, 185, 129, 0.4), radial 0 0 15px rgba(16, 185, 129, 0.15);
   display: flex;
   align-items: center;
   justify-content: center;
   backdrop-filter: blur(10px);
-  width: 440px;
-  height: 440px;
+  width: 300px;
+  height: 300px;
 }
 
 .badge-image {
-  width: 100%;
-  height: 100%;
+  width: 200%;
+  height: 200%;
   object-fit: contain;
   filter: drop-shadow(0 0 15px rgba(16, 185, 129, 0.4));
 }
@@ -168,7 +166,7 @@ import lissoLogoImg from '@/assets/lis.png'
 
 .content-card {
   background: rgba(8, 29, 34, 0.85);
-  border: 1px solid rgba(16, 185, 129, 0.3);
+  border: 1px solid rgba(0, 0, 0, 0.3);
   border-bottom: 4px solid #10b981;
   padding: 2.25rem;
   border-radius: 12px;

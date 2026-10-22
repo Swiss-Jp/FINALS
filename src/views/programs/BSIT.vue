@@ -1,6 +1,5 @@
 <script setup>
-// Make sure your ITSO emblem is saved as src/assets/IT.png
-import itsoLogoImg from '@/assets/IT.png'
+import itsoLogoImg from '@/assets/ITbig.png'
 </script>
 
 <template>

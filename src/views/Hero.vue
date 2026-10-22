@@ -11,7 +11,7 @@
         SHARE
       </h1>
       
-      <p class="hero-tagline">different PEOPLE, ONE goal</p>
+      <p class="hero-tagline">DIFFERENT PEOPLE, ONE GOAL</p>
       
 
     </div>

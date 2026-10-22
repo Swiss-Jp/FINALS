@@ -1,10 +1,9 @@
 <script setup>
-import csLogoImg from '@/assets/CS.png' 
+import csLogoImg from '@/assets/CSSbig.png' 
 </script>
 
 <template>
   <div class="program-page">
-    <!-- Hero Section with Left Text and Centered CS Card -->
     <section class="hero-section">
       <div class="hero-content">        
         <h1 class="hero-main-title">
@@ -19,7 +18,6 @@ import csLogoImg from '@/assets/CS.png'
         <p class="hero-tagline">COMPUTER SCIENCE SOCIETY</p>
       </div>
 
-      <!-- Centered Hero Logo Card -->
       <div class="hero-logo-area">
         <div class="cs-badge-card">
           <img :src="csLogoImg" alt="Computer Science Logo" class="badge-image" />

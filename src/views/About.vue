@@ -27,7 +27,7 @@
 .about-page {
   background: rgb(255, 255, 255);
   padding: 5rem 2rem;
-  border-radius: 8px;
+  border-radius: 0px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.05);
   max-width: 1100px;
   margin: 2rem auto;
