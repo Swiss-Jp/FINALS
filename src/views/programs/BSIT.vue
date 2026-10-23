@@ -4,7 +4,6 @@ import itsoLogoImg from '@/assets/ITbig.png'
 
 <template>
   <div class="program-page">
-    <!-- Hero Section with Left Content & Centered ITSO Badge -->
     <section class="hero-section">
       <div class="hero-content">        
         <h1 class="hero-main-title">
@@ -17,7 +16,7 @@ import itsoLogoImg from '@/assets/ITbig.png'
         </p>
       </div>
 
-      <!-- Hero Card Area displaying ITSO Logo -->
+      <!-- Card ITSo lOGO -->
       <div class="hero-logo-area">
         <div class="itso-badge-card">
           <img :src="itsoLogoImg" alt="ITSO Emblem" class="badge-image" />
@@ -25,7 +24,7 @@ import itsoLogoImg from '@/assets/ITbig.png'
       </div>
     </section>
 
-    <!-- Dark Gold-Glow Content Section (Side-by-Side Grid) -->
+    <!-- Glowing gold sa gilid card -->
     <div class="program-body">
       <div class="cards-grid">
         <section class="content-card">
@@ -80,7 +79,7 @@ import itsoLogoImg from '@/assets/ITbig.png'
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 3.5rem 6%; /* Tightened vertical padding */
+  padding: 3.5rem 6%; 
   background-color: #0d2326;
   background-image: 
     radial-gradient(circle at 75% 50%, rgba(245, 158, 11, 0.15) 0%, transparent 50%),
@@ -99,7 +98,7 @@ import itsoLogoImg from '@/assets/ITbig.png'
 .hero-main-title {
   color: #ffffff;
   font-family: 'Helvetica Neue', Arial, sans-serif;
-  font-size: 4.2rem; /* Made larger */
+  font-size: 4.2rem; 
   font-weight: 900;
   line-height: 1.05;
   letter-spacing: 1px;
@@ -119,7 +118,7 @@ import itsoLogoImg from '@/assets/ITbig.png'
   font-weight: bold;
 }
 
-/* Card Area with ITSO Gold Glow */
+/* LOGO GLOW GOLD */
 .hero-logo-area {
   display: flex;
   justify-content: center;
@@ -137,8 +136,8 @@ import itsoLogoImg from '@/assets/ITbig.png'
   align-items: center;
   justify-content: center;
   backdrop-filter: blur(10px);
-  width: 440px; /* Made larger */
-  height: 440px; /* Made larger */
+  width: 440px; 
+  height: 440px; 
 }
 
 .badge-image {
@@ -149,12 +148,12 @@ import itsoLogoImg from '@/assets/ITbig.png'
 }
 
 .program-body {
-  max-width: 1350px; /* Expanded max-width for side-by-side layout */
+  max-width: 1350px; 
   margin: 0 auto;
   padding: 3rem 1.5rem;
 }
 
-/* Side-by-side grid layout for cards */
+
 .cards-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -188,7 +187,7 @@ import itsoLogoImg from '@/assets/ITbig.png'
 
 @media (max-width: 1024px) {
   .cards-grid {
-    grid-template-columns: 1fr; /* Stack on smaller screens */
+    grid-template-columns: 1fr; 
   }
 
   .hero-section {

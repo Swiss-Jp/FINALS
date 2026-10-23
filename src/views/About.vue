@@ -36,7 +36,7 @@
 .about-header {
   padding-bottom: 1.5rem;
   margin-bottom: 2rem;
-  text-align: center; /* Center aligns header text */
+  text-align: center; 
 }
 
 .about-header h1 {
@@ -49,7 +49,6 @@
   margin-bottom: 2.5rem;
 }
 
-/* Center utility for College Background */
 .center-block {
   text-align: center;
   max-width: 850px;

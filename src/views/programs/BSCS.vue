@@ -25,7 +25,6 @@ import csLogoImg from '@/assets/CSSbig.png'
       </div>
     </section>
 
-    <!-- Side-by-Side Content Cards Section -->
     <div class="program-body">
       <div class="cards-grid">
         <section class="content-card">
@@ -124,7 +123,6 @@ import csLogoImg from '@/assets/CSSbig.png'
   margin: 0;
 }   
 
-/* Centered Hero Card Area with Glow */
 .hero-logo-area {
   display: flex;
   justify-content: center;
@@ -136,7 +134,7 @@ import csLogoImg from '@/assets/CSSbig.png'
   background: rgba(14, 30, 46, 0.9);
   padding: 2.5rem;
   border-radius: 16px;
-  border: 2px solid #38bdf8;
+  border: 2px solid #07b5ff;
   box-shadow: 0 0 40px rgba(56, 189, 248, 0.4), inset 0 0 15px rgba(56, 189, 248, 0.1);
   display: flex;
   align-items: center;
@@ -215,7 +213,7 @@ import csLogoImg from '@/assets/CSSbig.png'
 
 .sub-list li {
   font-size: 0.92rem;
-  color: #94a3b8;
+  color: #e8eaec;
 }
 
 @media (max-width: 1024px) {

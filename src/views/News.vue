@@ -22,21 +22,21 @@ import { ref } from 'vue'
 const newsList = ref([
   {
     id: 1,
-    date: 'October 15, 2026',
-    title: 'CCS Holds Annual Web Systems Hackathon',
-    snippet: 'Students from BSIT, BSCS, BSDMIA, and BLIS collaborated to build innovative web and mobile solutions during the 24-hour coding challenge.'
+    date: 'October 19, 2026',
+    title: 'Finals Exam Week Commences for CCS Students',
+    snippet: 'The college has officially begun the finals exam week for all Computer Science programs.'
   },
   {
     id: 2,
-    date: 'October 02, 2026',
-    title: 'New Partnership Announced with Tech Industries',
-    snippet: 'CPU CCS secures new internship pipelines for senior students specializing in software engineering and cloud infrastructure.'
+    date: 'October 05, 2026',
+    title: 'University DAY Celebration',
+    snippet: 'The university celebrates its founding day with various activities and events for students, faculty, and staff.'
   },
   {
     id: 3,
-    date: 'September 20, 2026',
-    title: 'Enrollment and Orientation for Incoming Freshmen',
-    snippet: 'The college welcomes new compute studies aspirants with an interactive orientation program highlighting modern computing labs.'
+    date: 'October 12, 2026',
+    title: 'bday ko',
+    snippet: 'MWAHAHAHAHAHAHA.'
   }
 ])
 </script>
@@ -52,7 +52,7 @@ const newsList = ref([
   border-bottom: 2px solid #f59e0b;
   padding-bottom: 1.5rem;
   margin-bottom: 2rem;
-  text-align: center; /* Center aligns header text */
+  text-align: center; 
 }
 
 .news-header h1 {

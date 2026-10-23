@@ -4,7 +4,6 @@ import midasLogoImg from '@/assets/MIDASbig.png'
 
 <template>
   <div class="program-page">
-    <!-- Hero Section with Enlarged Card-Free MIDAS Logo -->
     <section class="hero-section">
       <div class="hero-content">        
         <h1 class="hero-main-title">
@@ -22,13 +21,11 @@ import midasLogoImg from '@/assets/MIDASbig.png'
         <p class="hero-tagline">MIDAS</p>
       </div>
 
-      <!-- Card-Free Enlarged Logo Area -->
       <div class="hero-logo-area">
         <img :src="midasLogoImg" alt="MIDAS Logo" class="midas-logo-img" />
       </div>
     </section>
 
-    <!-- Side-by-Side Content Cards Section -->
     <div class="program-body">
       <div class="cards-grid">
         <section class="content-card">
@@ -119,7 +116,6 @@ import midasLogoImg from '@/assets/MIDASbig.png'
   margin: 0;
 }   
 
-/* Card-free Enlarged Logo Area with Enhanced Glow */
 .hero-logo-area {
   display: flex;
   justify-content: center;
